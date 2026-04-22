@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Puissance 4</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Lobby -->
+  <div id="lobby">
+    <h1>Puissance 4</h1>
+    <div class="card">
+      <input id="player-name" type="text" placeholder="Votre prénom" maxlength="20" />
+      <div class="lobby-actions">
+        <button id="btn-create">Créer une partie</button>
+        <div class="divider">ou</div>
+        <div class="join-row">
+          <input id="room-code" type="text" placeholder="Code salle (ex: AB12C)" maxlength="5" />
+          <button id="btn-join">Rejoindre</button>
+        </div>
+      </div>
+      <p id="lobby-error" class="error"></p>
+    </div>
+  </div>
+
+  <!-- Waiting -->
+  <div id="waiting" class="hidden">
+    <h1>Puissance 4</h1>
+    <div class="card">
+      <p>En attente d'un adversaire…</p>
+      <div class="room-code-display">
+        <span>Code de la salle :</span>
+        <strong id="display-room-id"></strong>
+      </div>
+      <button id="btn-copy">Copier le code</button>
+    </div>
+  </div>
+
+  <!-- Game -->
+  <div id="game" class="hidden">
+    <h1>Puissance 4</h1>
+    <div id="players-info">
+      <div class="player-badge" id="badge-p1"></div>
+      <div id="status-text"></div>
+      <div class="player-badge" id="badge-p2"></div>
+    </div>
+    <div id="board-container">
+      <div id="col-arrows"></div>
+      <div id="board"></div>
+    </div>
+    <button id="btn-restart" class="hidden">Rejouer</button>
+  </div>
+
+  <!-- Overlay -->
+  <div id="overlay" class="hidden">
+    <div class="overlay-content">
+      <div id="overlay-text"></div>
+      <button id="btn-overlay-restart">Rejouer</button>
+    </div>
+  </div>
+
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="game.js"></script>
+</body>
+</html>
