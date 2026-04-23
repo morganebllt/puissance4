@@ -1,0 +1,30 @@
+{
+  "version": 1,
+  "skills": {
+    "qovery-deploy": {
+      "source": "Qovery/qovery-skills",
+      "sourceType": "github",
+      "computedHash": "4644c26af6c0fc0d618c9917edd45cb2c2623930a52522a10e119312eeba093e"
+    },
+    "qovery-onboard": {
+      "source": "Qovery/qovery-skills",
+      "sourceType": "github",
+      "computedHash": "0266f13a8ecd549aeb6702a84cea279349c3c3c495f05075c62e831bd39d44a4"
+    },
+    "qovery-optimize": {
+      "source": "Qovery/qovery-skills",
+      "sourceType": "github",
+      "computedHash": "af8f9ddb9e9db9c957b30998875948851e3c00c72654b65f616c7893fb213776"
+    },
+    "qovery-speedup": {
+      "source": "Qovery/qovery-skills",
+      "sourceType": "github",
+      "computedHash": "3db584fdedbbb09735b247b95d05af22fe57e77de6571c20536fad981aa9abad"
+    },
+    "qovery-troubleshoot": {
+      "source": "Qovery/qovery-skills",
+      "sourceType": "github",
+      "computedHash": "0f43a9c18b17de0915da380da60bee4021c5ab6afbc9284df871bcac22ae2c1f"
+    }
+  }
+}
